@@ -13,7 +13,7 @@ import App from './app/App';
       }
 ReactDOM.render(
   <React.StrictMode>
-    <App nav={nav}/>
+    <App nav={nav} text='asdsadsadsa'/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -6,7 +6,7 @@ class Header extends Component {
 
         return (
             
-            <header className="App-header">
+            <header className="App-header container">
               <Nav nav={this.props.nav}/>
                
                
