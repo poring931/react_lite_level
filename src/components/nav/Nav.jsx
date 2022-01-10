@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
+import Contacts from '../../pages/Contacts';
+import Home from '../../pages/Home';
+import NotFound from '../../pages/NotFound';
 
 class Nav extends Component {
     constructor(props){
@@ -17,15 +21,16 @@ class Nav extends Component {
     render() {
         return (
           <nav>
-              <button type="button" onClick={this.showNav}> Show Menu </button>
-              <h1>{this.state.title}</h1>
-              <h2>{this.state.subtitle}</h2>
-              <p>{this.state.show}</p>
                 <ul>
                     {Object.keys(this.props.nav).map(item => {
-                        return <li><a href={this.props.nav[item]}>{item}</a></li>
+                        return <li key={item}><Link  to={this.props.nav[item]}>{item}</Link></li>
                     })}
                 </ul>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="contacts" element={<Contacts />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
           </nav>
         );
     }
