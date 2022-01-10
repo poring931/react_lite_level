@@ -9,6 +9,8 @@ class TickTackToe extends Component {
         this.state = {
             square: Array(9).fill(null),
             count: 0,
+            winnerName:'',
+            
         }
         this.winnerLine = [
             [0, 1, 2],
@@ -31,15 +33,36 @@ class TickTackToe extends Component {
                 && this.state.square[line[1]] === s
                 && this.state.square[line[2]] === s
                 ) {
-                    alert(s + ' is win')
+                    
+                    this.setState({winnerName: s});
+                    document.querySelector('dialog').showModal()
+                    
                     setTimeout(() => {
                         this.setState({square: Array(9).fill(null)});
                         this.setState({count: 0});
                         document.querySelectorAll('.ttt-grid').forEach(square => {
                             square.classList.remove('red', 'green')
                         });
+
+                        document.querySelector('dialog').close()
                     }, 3000);
+                } else {
+                    if (this.state.square.indexOf(null)<0){
+                         this.setState({winnerName: 'Ничья'});
+                            document.querySelector('dialog').showModal()
+                    
+                        setTimeout(() => {
+                            this.setState({square: Array(9).fill(null)});
+                            this.setState({count: 0});
+                            document.querySelectorAll('.ttt-grid').forEach(square => {
+                                square.classList.remove('red', 'green')
+                            });
+
+                            document.querySelector('dialog').close()
+                        }, 3000);
+                    }
                 }
+                console.log();
         }
     }
 
@@ -61,7 +84,7 @@ class TickTackToe extends Component {
     render() {
         return (
         <div className='tic-tac-toe'>
-            <div className='ttt-grid'  onClick={this.clickHandler} index="0">{this.state.square[0]}</div>
+            <div className='ttt-grid' onClick={this.clickHandler} index="0">{this.state.square[0]}</div>
             <div className='ttt-grid' onClick={this.clickHandler} index="1">{this.state.square[1]}</div>
             <div className='ttt-grid' onClick={this.clickHandler} index="2">{this.state.square[2]}</div>
             <div className='ttt-grid' onClick={this.clickHandler} index="3">{this.state.square[3]}</div>
@@ -70,6 +93,9 @@ class TickTackToe extends Component {
             <div className='ttt-grid' onClick={this.clickHandler} index="6">{this.state.square[6]}</div>
             <div className='ttt-grid' onClick={this.clickHandler} index="7">{this.state.square[7]}</div>
             <div className='ttt-grid' onClick={this.clickHandler} index="8">{this.state.square[8]}</div>
+            <dialog >
+                <p>Победитель - <b>{this.state.winnerName} </b></p>
+            </dialog>
         </div>
         );
     }
