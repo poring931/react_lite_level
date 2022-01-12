@@ -2,35 +2,39 @@ import './App.scss';
 
 import React, { Component } from 'react';
 import Header from '../page_blocks/header/Header';
-import Main from '../page_blocks/main/Main';
 import Footer from '../page_blocks/footer/Footer';
-import TickTackToe from '../components/ticTacToe/TickTackToe';
-import { Link, Route, Routes } from 'react-router-dom';
+import TickTackToe from '../pages/ticTacToe/TickTackToe';
+import { BrowserRouter, Link, Route, Router, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import Contacts from '../pages/Contacts';
+import NotFound from '../pages/NotFound';
+import { Container } from 'react-bootstrap';
 
 
 class App  extends Component  {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
-
     return (
-    <div className="App">
-      <Header nav={this.props.nav}/>
-      <Main/>
-      <Footer/>
-
-      
-
-      
-
-   
-
-
-
-        <TickTackToe/>
-
-
-    </div>
+        <BrowserRouter>
+          <div className="App">
+            <Header />
+              <main>
+                <Container>
+                
+                  <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="contacts" element={<Contacts />} />
+                        <Route path="tick-tack-toe" element={<TickTackToe />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+              </Container>
+              </main>
+            <Footer/>
+          </div>
+        </BrowserRouter>
   );
   }
 }

@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
-import Nav from '../../components/nav/Nav';
+import { Container, Navbar } from 'react-bootstrap';
+import Navigation from '../../components/nav/Nav';
 
 class Header extends Component {
     render() {
 
         return (
-            
             <header className="App-header container">
-              <Nav nav={this.props.nav}/>
-               
-               
+                <Navbar bg="light" variant="light">
+                    <Container>
+                    <Navbar.Brand href="#home">
+                        <img
+                        alt=""
+                        src="/images/dollar-svgrepo-com.svg"
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                        />{' '}
+                       <h1  className="d-inline-block align-top">Курс валют</h1>
+                    </Navbar.Brand>
+                    </Container>
+                </Navbar>
+              <Navigation nav={this.props.nav}/>
             </header>
         );
     }

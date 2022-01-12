@@ -1,0 +1,21 @@
+.currency_item {
+    display: flex;
+    flex-direction: column;
+    border:2px solid teal;
+    margin:0 15px;
+    margin-bottom: 30px;
+    background-color: rgb(219, 200, 200);
+    color:#000;
+    font-weight: bold;
+    gap: 10px;
+    padding:20px;
+    .currency_item_name{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .currency_item_in{
+        font-size: 1.3rem;
+        color:#00a41b;
+        text-align: right;
+    }
+}

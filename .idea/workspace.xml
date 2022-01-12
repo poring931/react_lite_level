@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a92d5642-9676-4551-9c47-0849b4d17d63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ticTacToe/TickTackToe.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ticTacToe/TickTackToe.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_blocks/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_blocks/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_blocks/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_blocks/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_blocks/main/Main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="23bhcUPClWL7bhIzStF8nCg9CLz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a92d5642-9676-4551-9c47-0849b4d17d63" name="Default Changelist" comment="" />
+      <created>1642008775929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642008775929</updated>
+      <workItem from="1642008777072" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>
